@@ -34,7 +34,7 @@ async def on_member_update(antes, depois):
 
 @client.event
 async def on_member_join(member):
-    await client.send(f"Opa, bem vindo cabeça de pika {member.mention}")
+    await client.send_message(f"Opa, bem vindo cabeça de pika {member.mention}")
 
 
 
