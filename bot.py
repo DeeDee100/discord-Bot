@@ -11,14 +11,13 @@ def read_token():
         return lines[0].strip()
 '''
 
-#token = 'ODE0MjQ2Mjc3MTcyMDM1NjM1.YDbD8A.UGGPfKpAr_sXpBvHdehC3rQ85EU'
 #token = read_token()
 
 client = discord.Client()
 
 comando = ["!help","!hi","!hello","!users","!pin"]
 
-"""
+
 @client.event
 async def on_member_update(antes, depois):
     n = depois.nick
@@ -28,9 +27,9 @@ async def on_member_update(antes, depois):
             if last:
                 await depois.edit(nick=antes)
             else:
-                await depois.edit(nick="NÃO PODE COLOCAR NICK")
+                await depois.edit(nick=" OI PXT ")
 
-"""
+
 
 
 @client.event
