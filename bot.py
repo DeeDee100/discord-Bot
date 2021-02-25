@@ -22,12 +22,12 @@ comando = ["!help","!hi","!hello","!users","!pin"]
 async def on_member_update(antes, depois):
     n = depois.nick
     if n:
-        if n.lower() =="dee":
+        if n.lower() =="deedee100":
             last = antes.nick
             if last:
                 await depois.edit(nick=antes)
             else:
-                await depois.edit(nick=" OI PXT ")
+                await depois.edit(nick=" NÃO ROUBA MEU NICK KRAI ")
 
 
 
