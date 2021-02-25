@@ -34,7 +34,9 @@ async def on_member_update(antes, depois):
 
 @client.event
 async def on_member_join(member):
-    await client.send_message(f"Opa, bem vindo cabeça de pika {member.mention}")
+    for channel in member.server.channels:
+        if str(channel):
+            await client.send_message(f"Opa, bem vindo cabeça de pika {member.mention}")
 
 
 
