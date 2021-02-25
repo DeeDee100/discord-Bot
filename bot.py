@@ -3,7 +3,7 @@ import os
 
 #id do Server =814283608528781313
 
-token = os.environ["TOKEN"]
+token = os.getenv("TOKEN")
 '''
 def read_token():
     with open("token.txt", "r") as f:
