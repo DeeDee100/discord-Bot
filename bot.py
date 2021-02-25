@@ -1,8 +1,9 @@
 import  discord
-
+import os
 
 #id do Server =814283608528781313
 
+token = os.environ["TOKEN"]
 '''
 def read_token():
     with open("token.txt", "r") as f:
@@ -10,7 +11,7 @@ def read_token():
         return lines[0].strip()
 '''
 
-token = 'ODE0MjQ2Mjc3MTcyMDM1NjM1.YDbD8A.UGGPfKpAr_sXpBvHdehC3rQ85EU'
+#token = 'ODE0MjQ2Mjc3MTcyMDM1NjM1.YDbD8A.UGGPfKpAr_sXpBvHdehC3rQ85EU'
 #token = read_token()
 
 client = discord.Client()
